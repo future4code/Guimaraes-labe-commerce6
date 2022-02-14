@@ -39,6 +39,16 @@ export const AppHeader = styled.div`
         margin-left: 15px;
     }
 
+    .search-bar {
+        display: flex;
+        align-items: center;
+    }
+
+    .search-bar input {
+        width: 250px;
+        padding: 2px;
+    }
+
     .header-buttons button {
         margin-left: 20px;
         padding: 5px;
@@ -47,7 +57,7 @@ export const AppHeader = styled.div`
     .avatar {
         display: flex;
         align-items: center;
-        padding: 0 10px;
+        padding: 0 15px;
     }
 
     .avatar img {

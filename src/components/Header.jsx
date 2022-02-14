@@ -1,7 +1,9 @@
 import React from "react";
 import { AppHeader } from "../styles";
 import logo from '../assets/rocket.png'
-import avatar from '../assets/avatar-img.png'
+import { Avatar } from "@mui/material";
+import { red } from "@mui/material/colors";
+import SearchIcon from '@mui/icons-material/Search';
 
 export default function Header() {
   return (
@@ -21,16 +23,16 @@ export default function Header() {
             <li>Registre-se</li>
           </ul>
         </div>
+        <div className="search-bar">
+          <input type="text" />
+          <SearchIcon />
+        </div>
         <div className="header-buttons">
           <button>Login</button>
           <button>Meu Carrinho</button>
         </div>
         <div className="avatar">
-          <img
-            src={avatar}
-            id="avatar"
-            alt="avatar"
-          />
+          <Avatar sx={{ bgcolor: red[500], fontFamily: 'Red Hat Display' }}>TC</Avatar>
         </div>
       </AppHeader>
     </div>
