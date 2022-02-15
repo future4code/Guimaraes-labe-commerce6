@@ -46,7 +46,10 @@ export const AppHeader = styled.div`
 
     .search-bar input {
         width: 250px;
-        padding: 2px;
+        padding: 5px;
+        background-color: #ededf0;
+        border-radius: 14px;
+        border: none;
     }
 
     .header-buttons button {
