@@ -1,14 +1,16 @@
 import React from 'react';
-import Carrinho2 from './components/Carrinho2';
 import Header from './components/Header';
+import Carrinho from './components/Carrinho';
 
 function App() {
   return (
-    <div className="App">
-      <header><Header/></header>
-      <main><Carrinho2/></main>
-    </div>
-  );
-}
+   
+        <div className="App">
+          <header><Header/></header>
+          <main><Carrinho/></main>
+        </div>
+      );
+    }
+    
 
 export default App;
