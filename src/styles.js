@@ -11,8 +11,12 @@ export const AppHeader = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
-    border: 1px solid black;
+    height: 100px;
+    border-bottom: 1px solid black;
+    background: #eaeaf5;
+    
+
+  
 
     .header-logo {
         display: flex;
@@ -21,8 +25,8 @@ export const AppHeader = styled.div`
     }
 
     .header-logo img {
-        height: 40px;
-        width: 40px;
+        height: 90px;
+        width: 90px;
         padding: 0 15px;
     }
 
@@ -45,15 +49,28 @@ export const AppHeader = styled.div`
     }
 
     .search-bar input {
-        width: 250px;
+        width: 450px;
         padding: 5px;
-        background-color: #ededf0;
-        border-radius: 14px;
+        background:#66d5f1;
+        color: #414141;
+        border-radius: 5px;
         border: none;
+    }
+
+    .search-bar input:hover {
+       
+        background: #414141;
+        color: #66d5f1;
+        
     }
 
     .header-buttons button {
         margin-left: 20px;
+        padding: 5px;
+    }
+
+    .IconCarrinho{
+        width: 30px;
         padding: 5px;
     }
 
@@ -66,5 +83,6 @@ export const AppHeader = styled.div`
     .avatar img {
         height: 40px;
     }
+  
 
 `

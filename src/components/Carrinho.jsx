@@ -1,65 +1,82 @@
 import React from "react";
 import styled from "styled-components";
 
-const CarrinhodeCompras = styled.div``
-const BotaoFechar = styled.div``
-const TableProdutosCarro = styled.div``
-const Quantidade = styled.div``
-const Button = styled.div``
-const InputNum = styled.div``
-const SubTotal = styled.div``
-const BotaoRemover = styled.div``
-const TotalCompra = styled.div``
-const TituloTotal = styled.div``
-const TotalValor = styled.div``
-const ButtonFinalizarCompra = styled.div``
+const CarrinhoStyle = styled.div`
+  
+  @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+  
+  * {
+    font-family: 'Red Hat Display';
+  }
+  
+  border: none;
+  width: 400px;
+  height: 100vh;
+  float: right;
+  padding:8px;
+  background: #eaeaf5;
+}
+ 
+
+  .tabela-produtos {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px
+  }
+
+  .total-compra {
+    display: flex;
+    justify-content: space-between;
+    padding: 5 15px;
+    width: 35vw;
+    height: 7vh;
+    border:none;
+  }
+
+  .Finalizar{
+    width: 35vw;
+    height: 7vh;
+    background:#66d5f1;
+    color: #414141;
+    border: none;
+    font-size: 15px; 
+  
+  }
+  .Finalizar:hover{
+   
+    background: #414141;
+    color: #66d5f1;
+  
+  }
+
+`
 
 class Carrinho extends React.Component {
-
+  
   render() {
     return (
-    <CarrinhodeCompras>
-      <h2>Meus Pedidos</h2>
-      <BotaoFechar> X </BotaoFechar>
+      <div>
+      <CarrinhoStyle>
+        <div className="carrinho-compras">
 
-      <TableProdutosCarro>
-        <tr>
-          <td>PRODUTO</td>
-          <td>SUBTOTAL</td>
-        </tr>
-        <tr>
-          <td>
-            <p> produtoNome="" produtoImagem="" produtoValor ="" </p>
-            <Quantidade>
-              <Button type="button" id="menos" onClick="">
-                -
-              </Button>
-              <InputNum type="number" name="numero" />
-              <Button type="button" id="mais" onClick="">
-                +
-              </Button>
-            </Quantidade>
-          </td>
+        <h2>Meus Pedidos</h2>
+        <br></br> 
+          <div className="tabela-produtos"> 
+              <p>PRODUTO</p>
+              <p>SUBTOTAL</p>
+          </div>
 
-          <td>
-            <SubTotal>
-              <p>// produtoValor + quantidade</p>
-              <BotaoRemover>
-                <img src="https://icons.iconarchive.com/icons/custom-icon-design/mono-general-4/24/trash-icon.png" />
-              </BotaoRemover>
-            </SubTotal>
-          </td>
-        </tr>
-      </TableProdutosCarro>
-
-      <TotalCompra>
-        <TituloTotal>TOTAL</TituloTotal>
-        <TotalValor> R$,00 </TotalValor>
-      </TotalCompra>
-
-      <ButtonFinalizarCompra>Finalizar Compra</ButtonFinalizarCompra>
-    </CarrinhodeCompras>
-    )
+          <br></br> 
+        <div className="total-compra">
+          <h2>TOTAL</h2>
+          <h2>R$0,00</h2>
+        </div>
+        <br></br> 
+        <button className="Finalizar">Finalizar Compra</button>
+      </div>
+      </CarrinhoStyle>
+      </div>
+    );
   }
 }
 
