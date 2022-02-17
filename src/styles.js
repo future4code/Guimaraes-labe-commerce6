@@ -14,9 +14,6 @@ export const AppHeader = styled.div`
     height: 100px;
     border-bottom: 1px solid black;
     background: #eaeaf5;
-    
-
-  
 
     .header-logo {
         display: flex;

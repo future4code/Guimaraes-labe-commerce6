@@ -14,9 +14,7 @@ const CarrinhoStyle = styled.div`
   height: 100vh;
   float: right;
   padding:8px;
-  background: #eaeaf5;
-}
- 
+  background: #eaeaf5; 
 
   .tabela-produtos {
     display: flex;
@@ -28,13 +26,13 @@ const CarrinhoStyle = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 5 15px;
-    width: 35vw;
+    width: 100%;
     height: 7vh;
     border:none;
   }
 
   .Finalizar{
-    width: 35vw;
+    width: 100%;
     height: 7vh;
     background:#66d5f1;
     color: #414141;
@@ -48,8 +46,7 @@ const CarrinhoStyle = styled.div`
     color: #66d5f1;
   
   }
-
-`
+  `
 
 class Carrinho extends React.Component {
   

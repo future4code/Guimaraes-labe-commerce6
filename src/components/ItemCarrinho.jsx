@@ -31,7 +31,7 @@ const ProdutoCarrinho = styled.div`
 
   .BotaoContador{
       border-radius: 5px;
-      backgroud: #6faf6f;
+      background: #6faf6f;
   }
 
 `
