@@ -12,7 +12,6 @@ export const AppHeader = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  border-bottom: 1px solid black;
   background: #eaeaf5;
 
   .header-logo {
@@ -116,3 +115,15 @@ export const CarrinhoStyle = styled.div`
     color: #66d5f1;
   }
 `;
+
+// Estilos para o Filtro
+
+export const FilterStyle = styled.div`
+  
+  .filter-container {
+    padding: 20px;
+    width: 100%;
+  }
+  
+
+`

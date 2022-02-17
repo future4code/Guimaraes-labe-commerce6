@@ -1,5 +1,6 @@
 import React from "react";
 import CardProduto from "./CardProduto";
+import { Grid } from "@mui/material";
 
 export default function Produtos(props) {
   console.log(props.produtos.map((item) => item.title));
@@ -8,7 +9,7 @@ export default function Produtos(props) {
     <div className="products-list">
       {props.produtos.map((item) => {
         return (
-          <CardProduto item={item.title} key={item.id} valor={item.price} />
+          <Grid item><CardProduto item={item.title} key={item.id} valor={item.price} /></Grid>
         );
       })}
     </div>

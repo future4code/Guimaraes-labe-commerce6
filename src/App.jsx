@@ -6,39 +6,42 @@ import Produtos from "./components/Produtos";
 import Filtro from "./components/Filtro";
 
 import styled from "styled-components";
+import { Grid } from "@mui/material";
 
 const AppStyle = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
 
   * {
     font-family: "Red Hat Display";
+    box-sizing: border-box;
   }
 
-  .App {
+  .body-container {
     display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-items: center;
   }
 
   .shopping-cart {
-    border: none;
     width: 320px;
     height: 100vh;
     float: right;
-    padding: 8px;
+    padding: 10px;
     background: #eaeaf5;
   }
 
   .product-list {
+    display: grid;
+    width: 100%;
     margin-bottom: 15px;
     text-align: center;
     padding: 15px;
-    display: grid;
     gap: 10px;
   }
 
   .filter {
-    width: 15%;
+    margin: 0;
     height: 100vh;
-    border: 1px solid black;
     float: left;
     background: #eaeaf5;
   }
@@ -52,14 +55,23 @@ function App() {
           <Header />
         </header>
         <main>
-          <div className="shopping-cart">
-            <Carrinho />
-          </div>
-          {/* <div className="product-list">
-          <Produtos produtos={dados} />
-        </div> */}
-          <div className="filter">
-            <Filtro />
+          <div className="body-container">
+            <div className="filter">
+              <Filtro />
+            </div>
+
+            <div className="product-list">
+              <Grid
+                container
+                rowSpacing={1}
+                columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+              >
+                <Produtos produtos={dados} />
+              </Grid>
+            </div>
+            <div className="shopping-cart">
+              <Carrinho />
+            </div>
           </div>
         </main>
       </AppStyle>
