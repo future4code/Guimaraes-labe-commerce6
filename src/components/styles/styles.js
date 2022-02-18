@@ -9,10 +9,12 @@ export const AppHeader = styled.div`
   }
 
   display: flex;
+  min-width: 100vw;
   justify-content: space-between;
   align-items: center;
   height: 100px;
   background: #eaeaf5;
+  box-sizing: border-box;
 
   .header-logo {
     display: flex;
@@ -22,7 +24,6 @@ export const AppHeader = styled.div`
 
   .header-logo img {
     height: 90px;
-    width: 90px;
     padding: 0 15px;
   }
 
@@ -53,9 +54,10 @@ export const AppHeader = styled.div`
     border: none;
   }
 
-  .search-bar input:hover {
+  .search-bar input:hover, input:focus {
     background: #414141;
     color: #66d5f1;
+    outline: none;
   }
 
   .header-buttons button {

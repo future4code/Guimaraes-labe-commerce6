@@ -6,7 +6,6 @@ import Produtos from "./components/Produtos";
 import Filtro from "./components/Filtro";
 
 import styled from "styled-components";
-import { Grid } from "@mui/material";
 
 const AppStyle = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
@@ -19,7 +18,6 @@ const AppStyle = styled.div`
   .body-container {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    justify-items: center;
   }
 
   .shopping-cart {
@@ -41,6 +39,7 @@ const AppStyle = styled.div`
 
   .filter {
     margin: 0;
+    width: 250px;
     height: 100vh;
     float: left;
     background: #eaeaf5;
@@ -59,15 +58,8 @@ function App() {
             <div className="filter">
               <Filtro />
             </div>
-
             <div className="product-list">
-              <Grid
-                container
-                rowSpacing={1}
-                columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-              >
-                <Produtos produtos={dados} />
-              </Grid>
+              <Produtos produtos={dados} />
             </div>
             <div className="shopping-cart">
               <Carrinho />
