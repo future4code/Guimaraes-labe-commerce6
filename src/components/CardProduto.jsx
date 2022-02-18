@@ -29,6 +29,7 @@ export default function CardProduto(props) {
         <div className="produto1">
             <p>{props.item}</p>
             <p>R${props.valor}</p><br/>
+            {/* <img src={props.foto} alt="imagem" /> */}
             <button>Adicionar ao Carrinho</button>
         </div>
         </Card>      
