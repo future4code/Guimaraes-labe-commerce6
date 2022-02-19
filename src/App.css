@@ -1,0 +1,21 @@
+.App{
+overflow-x: hidden;
+background-image: url("https://festuskinuthia.files.wordpress.com/2020/10/ql0wbtu.jpg");
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+header {
+    padding: 30px;
+    justify-content: space-between;
+}
+
+p{
+    font-size: 16px;
+}
+
+h2{
+    font-size: 20px;
+}
+

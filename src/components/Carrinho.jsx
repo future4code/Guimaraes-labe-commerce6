@@ -1,8 +1,13 @@
 import React from "react";
-import { CarrinhoStyle } from "../components/styles/styles";
+import {CarrinhoStyle} from "../components/styles/styles";
+//import ItemCarrinho from "./components/ItemCarrinho";
 
 class Carrinho extends React.Component {
+
+   
+
   render() {
+
     return (
       <div>
         <CarrinhoStyle>
@@ -14,10 +19,12 @@ class Carrinho extends React.Component {
               <p>SUBTOTAL</p>
             </div>
 
+           
+
             <br></br>
             <div className="total-compra">
               <h2>TOTAL</h2>
-              <h2>R$0,00</h2>
+              <h2>R$ ,00</h2>
             </div>
             <br></br>
             <button className="Finalizar">Finalizar Compra</button>

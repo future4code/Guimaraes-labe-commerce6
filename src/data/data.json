@@ -20,7 +20,7 @@
     "title": "Falcon Heavy",
     "price": 55350.99,
     "category": "spaceship",
-    "image": "https://pt.wikipedia.org/wiki/Falcon_Heavy#/media/Ficheiro:Falcon_Heavy_cropped.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Falcon_Heavy_cropped.jpg/800px-Falcon_Heavy_cropped.jpg",
     "rating": { "rate": 4.7, "count": 500 }
   },
   {
@@ -52,7 +52,7 @@
     "title": "Falcon 9",
     "price": 95800.99,
     "category": "spaceship",
-    "image": "https://pt.wikipedia.org/wiki/Ariane_5#/media/Ficheiro:Ariane_5ES_with_ATV_4_on_its_way_to_ELA-3.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Ariane_5ES_with_ATV_4_on_its_way_to_ELA-3.jpg/800px-Ariane_5ES_with_ATV_4_on_its_way_to_ELA-3.jpg",
     "rating": { "rate": 3, "count": 400 }
   },
   {
@@ -60,7 +60,7 @@
     "title": "Foguete Soyuz",
     "price": 103330.99,
     "category": "spaceship",
-    "image": "https://pt.wikipedia.org/wiki/Soyuz-FG#/media/Ficheiro:Soyuz_TMA-9_launch.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Soyuz_TMA-9_launch.jpg/800px-Soyuz_TMA-9_launch.jpg",
     "rating": { "rate": 1.9, "count": 100 }
   },
   {
@@ -68,7 +68,7 @@
     "title": "Antares",
     "price": 124000.89,
     "category": "spaceship",
-    "image": "https://pt.wikipedia.org/wiki/Antares_(foguete)#/media/Ficheiro:Antares_A-ONE_vertical_-_April_20.2.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Antares_A-ONE_vertical_-_April_20.2.jpg/800px-Antares_A-ONE_vertical_-_April_20.2.jpg",
     "rating": { "rate": 3.3, "count": 203 }
   }
 ]

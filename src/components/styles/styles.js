@@ -9,34 +9,45 @@ export const AppHeader = styled.div`
   }
 
   display: flex;
-  min-width: 100vw;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  flex-direction: row;
   height: 100px;
-  background: #eaeaf5;
-  box-sizing: border-box;
+  width: 100%;
+  background: rgba(234, 234, 245, 0.678);
 
+
+.Nav{
+  position:relative;
+  float:left;
+  list-style-type: none;
+  align-items: center;
+}
   .header-logo {
     display: flex;
     align-items: center;
     padding: 10px;
   }
 
-  .header-logo img {
-    height: 90px;
+  .logo {
+    height: 100px;
     padding: 0 15px;
+    border-radius: 60px;
   }
 
   .header-links {
     display: flex;
   }
 
-  .header-links ul {
+  .nav-tabs ul {
     display: flex;
+    flex-direction: row;
     list-style-type: none;
   }
 
-  .header-links li {
+  .nav-item li {
+    display: flex;
+    flex-direction: row;
     margin-left: 15px;
   }
 
@@ -45,7 +56,7 @@ export const AppHeader = styled.div`
     align-items: center;
   }
 
-  .search-bar input {
+  input{
     width: 450px;
     padding: 5px;
     background: #66d5f1;
@@ -54,10 +65,9 @@ export const AppHeader = styled.div`
     border: none;
   }
 
-  .search-bar input:hover, input:focus {
+  .search-bar input:hover {
     background: #414141;
     color: #66d5f1;
-    outline: none;
   }
 
   .header-buttons button {
@@ -78,16 +88,17 @@ export const AppHeader = styled.div`
 
   .avatar img {
     height: 40px;
-  }
-`;
+  }`;
 
-// Estilos para o Carrinho
-export const CarrinhoStyle = styled.div`
-  @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
-
-  * {
-    font-family: "Red Hat Display";
-  }
+  export const CarrinhoStyle = styled.div`
+    width: 20vw;
+    height: 100vh;
+    background: rgba(102, 213, 241, 0.678);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius:5px;
+    padding: 30px;
+    margin:10px
+    padding-top:30px;
 
   .tabela-produtos {
     display: flex;
@@ -104,10 +115,10 @@ export const CarrinhoStyle = styled.div`
     border: none;
   }
 
-  .Finalizar {
+  .Finalizar{
     width: 100%;
     height: 7vh;
-    background: #66d5f1;
+    background: #eaeaf5;
     color: #414141;
     border: none;
     font-size: 15px;
@@ -116,16 +127,12 @@ export const CarrinhoStyle = styled.div`
     background: #414141;
     color: #66d5f1;
   }
+
 `;
+
+ 
 
 // Estilos para o Filtro
 
-export const FilterStyle = styled.div`
-  
-  .filter-container {
-    padding: 20px;
-    width: 100%;
-  }
-  
 
-`
+

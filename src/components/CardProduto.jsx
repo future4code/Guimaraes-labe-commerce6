@@ -6,11 +6,12 @@ const Card = styled.div`
     justify-content: center;
     align-items: end;
     width: 250px;
-    height: 250px;
-    border: 1px solid grey;
+    height: 350px;
+    border: none;
     box-shadow: 2px 2px 2px grey;
-    border-radius: 10px;
+    border-radius:5px;
     padding: 10px;
+    background: rgba(234, 234, 245, 0.678);
 
     .produto1 {
       text-align: center;
@@ -18,7 +19,25 @@ const Card = styled.div`
     }
 
     .produto1 button {
-      padding: 3px;
+      
+    width: 12vw;
+    height: 6vh;
+    background: #66d5f1;
+    color: #414141;
+    border: none;
+    font-size: 15px;
+    margin: 10px;
+    }
+
+    .produto1 button:hover {
+      background: #414141;
+      color: #66d5f1;
+    }
+    .produto1 img {
+     max-width: 230px;
+     max-height: 200px;
+     border-radius:5px;
+
     }
 `
 
@@ -27,10 +46,10 @@ export default function CardProduto(props) {
     <div className='container-produtos'>
         <Card>
         <div className="produto1">
+           <img src={props.foto} alt="imagem"/> 
             <p>{props.item}</p>
             <p>R${props.valor}</p><br/>
-            {/* <img src={props.foto} alt="imagem" /> */}
-            <button>Adicionar ao Carrinho</button>
+            <button onClick={() => this.props.onAddProdutoCarrinho(props.key)}>Comprar</button>
         </div>
         </Card>      
     </div>

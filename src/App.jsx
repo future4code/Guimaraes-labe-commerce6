@@ -1,11 +1,13 @@
 import React from "react";
 import dados from "./data/data.json";
 import Header from "./components/Header";
-import Carrinho from "./components/Carrinho";
 import Produtos from "./components/Produtos";
 import Filtro from "./components/Filtro";
+import Carrinho from "./components/Carrinho";
+import "./App.css"
 
 import styled from "styled-components";
+import { Grid } from "@mui/material";
 
 const AppStyle = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
@@ -13,37 +15,38 @@ const AppStyle = styled.div`
   * {
     font-family: "Red Hat Display";
     box-sizing: border-box;
+  
   }
 
   .body-container {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
+    
   }
 
-  .shopping-cart {
-    width: 320px;
-    height: 100vh;
-    float: right;
-    padding: 10px;
-    background: #eaeaf5;
-  }
 
   .product-list {
-    display: grid;
-    width: 100%;
-    margin-bottom: 15px;
-    text-align: center;
-    padding: 15px;
-    gap: 10px;
+    display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 18px;
+      grid-row-gap:18px;
+      width: 100%;
+      margin-bottom: 15px;
+      text-align: center;
+      padding: 15px;
+  
   }
 
-  .filter {
-    margin: 0;
-    width: 250px;
+  
+
+  .Esquerda
+  {
+    margin: 10px;
+    padding:10px;
     height: 100vh;
     float: left;
-    background: #eaeaf5;
   }
+
 `;
 
 function App() {
@@ -55,15 +58,23 @@ function App() {
         </header>
         <main>
           <div className="body-container">
-            <div className="filter">
+            <div className="Esquerda">
               <Filtro />
+              <br></br>
+              <Carrinho/>
             </div>
+            
+
             <div className="product-list">
-              <Produtos produtos={dados} />
+              <Grid
+                container
+                rowSpacing={1}
+                columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+              >
+                <Produtos produtos={dados} />
+              </Grid>
             </div>
-            <div className="shopping-cart">
-              <Carrinho />
-            </div>
+
           </div>
         </main>
       </AppStyle>
