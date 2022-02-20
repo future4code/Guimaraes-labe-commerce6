@@ -1,21 +1,62 @@
-.App{
-overflow-x: hidden;
-background-image: url("https://festuskinuthia.files.wordpress.com/2020/10/ql0wbtu.jpg");
-background-attachment: fixed;
-background-repeat: no-repeat;
-background-size: cover;
-}
 
-header {
-    padding: 30px;
-    justify-content: space-between;
-}
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
 
-p{
-    font-size: 16px;
+* {
+  font-family: "Red Hat Display";
 }
+body{
+    overflow-x: hidden;
+    background-image: url("https://festuskinuthia.files.wordpress.com/2020/10/ql0wbtu.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .logo{
+        width: 180px;
+        border-radius:60px;
+    }
+    
+    p{
+        font-size: 16px;
+    }
+    
+    h2{
+        font-size: 20px;
+    }
 
-h2{
-    font-size: 20px;
-}
+    button{
+    width: 12vw;
+    height: 6vh;
+    background: rgba(102, 213, 241, 0.678);
+    color: #414141;
+    border: none;
+    font-size: 15px;
+    margin: 10px;
 
+    }
+    button:hover{
+        background: #414141;
+      color: #66d5f1;
+    }
+
+    .MinMax{
+        background: #eaeaf5;
+        border: none;
+        border-radius:5px; 
+        width: 100px;
+    }
+    select{
+        background: #eaeaf5;
+        border: none;
+        border-radius:5px; 
+        width: 100px;  
+    }
+
+    .Pesquisar{
+        width: 450px;
+        padding: 5px;
+        background: #414141;
+        color: #66d5f1;
+        border-radius: 5px;
+        border: none;
+    }
