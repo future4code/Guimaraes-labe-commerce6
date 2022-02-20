@@ -6,6 +6,6 @@
 Naves / Foguetes / Ônibus espaciais;
 
 ### Link do Surge:
-[Link text Here](https://kosmostore.surge.sh/)
+[Clique Aqui!](https://kosmostore.surge.sh/)
 
 ### Imagens: ![kosmostore](https://user-images.githubusercontent.com/83131771/154866158-6f2eafbb-080a-4e4e-8ba1-20f5240ce170.png)
