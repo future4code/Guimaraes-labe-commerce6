@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  font-family: "Red Hat Display";
 }
+body{
+    overflow-x: hidden;
+    background-image: url("https://festuskinuthia.files.wordpress.com/2020/10/ql0wbtu.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    .logo{
+        width: 180px;
+        border-radius:60px;
+    }
+    
+    p{
+        font-size: 16px;
+    }
+    
+    h2{
+        font-size: 20px;
+    }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+    button{
+    width: 12vw;
+    height: 6vh;
+    background: rgba(102, 213, 241, 0.678);
+    color: #414141;
+    border: none;
+    font-size: 15px;
+    margin: 10px;
 
-.App-link {
-  color: #61dafb;
-}
+    }
+    button:hover{
+        background: #414141;
+      color: #66d5f1;
+    }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    .MinMax{
+        background: #eaeaf5;
+        border: none;
+        border-radius:5px; 
+        width: 100px;
+    }
+    select{
+        background: #eaeaf5;
+        border: none;
+        border-radius:5px; 
+        width: 100px;  
+    }
+
+    .Pesquisar{
+        width: 450px;
+        padding: 5px;
+        background: #414141;
+        color: #66d5f1;
+        border-radius: 5px;
+        border: none;
+    }
